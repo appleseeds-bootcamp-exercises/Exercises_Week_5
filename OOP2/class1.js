@@ -9,4 +9,4 @@ class Player{
 }
 let p1 = new Player("Asi");
 p1.score = 32;
-console.log(p1.didWin());
+console.log(p1.didWin());   
