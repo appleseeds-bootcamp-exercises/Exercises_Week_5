@@ -6,7 +6,10 @@ class Account {
     this.sum += value;
   }
   withdraw(value) {
-    this.sum -= value;
+    if(value<this.sum){
+      this.sum -= value;
+    }
+    else console.log("Insuffiecient funds");
   }
   canWithdraw(value) {
     return this.sum > value;
